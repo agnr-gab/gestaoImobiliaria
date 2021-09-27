@@ -56,4 +56,19 @@ public class Imovel {
     public void adicionarMoradores(Moradores morador) {
         listaMoradores.add(morador);
     }
+
+    @Override
+    //private String enderecoImovel;
+    //    private String valorImovel;
+    //    private String moradorAtual;
+    //    private String funcionarioResponsavel;
+    public String toString() {
+        StringBuilder dadosImovel = new StringBuilder();
+        dadosImovel.append("\nEndereço: " + enderecoImovel);
+        dadosImovel.append("\nValor: R$ " + valorImovel);
+        dadosImovel.append("\nMorador atual: " + moradorAtual);
+        dadosImovel.append("\nFuncionário resposável: " + funcionarioResponsavel);
+        return dadosImovel.toString();
+
+    }
 }
