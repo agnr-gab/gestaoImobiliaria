@@ -65,6 +65,8 @@ public class Imoveis {
         dadosImovel.append("\nValor: R$ " + valorImovel);
         dadosImovel.append("\nMorador atual: " + moradorAtual);
         dadosImovel.append("\nFuncionário responsável: " + funcionarioResponsavel);
+        dadosImovel.append("\nQuantidade de moradores: " +listaMoradores.size());
+        dadosImovel.append("\nLista de moradores: " +listaMoradores);
         return dadosImovel.toString();
     }
 }
