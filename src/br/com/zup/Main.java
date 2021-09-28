@@ -7,6 +7,15 @@ Os alunos/alunas devem criar um sistema de gestão para uma imobiliária. O sist
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	Moradores morador1 = new Moradores("Maria","000.000.000-00","Arquiteta de Software",8500);
+	Funcionario funcionario1 = new Funcionario("Marina", "111.111.111-88", "Corretora de Imóveis", 5000);
+	Imoveis imovel1 = new Imoveis("Rua Antônio Xavier 36 Centro Bom Jesus RN 59270-970", "230000","João", "Pedro");
+
+		System.out.println(morador1);
+		System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+		System.out.println(funcionario1);
+		System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+		System.out.println(imovel1);
+
     }
 }
