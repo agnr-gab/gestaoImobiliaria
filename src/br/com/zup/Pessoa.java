@@ -6,6 +6,9 @@ public class Pessoa {
     private String profissao;
     private double rendaBruta;
 
+    public Pessoa() {
+    }
+
     public Pessoa(String nome, String cpf, String profissao, double rendaBruta) {
         this.nome = nome;
         this.cpf = cpf;
