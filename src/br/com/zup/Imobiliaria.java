@@ -8,9 +8,12 @@ endereço do imóvel, o valor do aluguel, quais são seus moradores e o nome do 
  */
 public class Imobiliaria{
 
-    private List<Moradores> listaMoradores = new ArrayList<>();
+    private List<Imoveis> listaImoveis = new ArrayList<>();
+    public void adicionarImoveis(Imoveis imovel) {
+        listaImoveis.add(imovel);
+    }
 
-    public void adicionarMoradores(Moradores morador) {
-        listaMoradores.add(morador);
+    public List<Imoveis> getListaImoveis() {
+        return listaImoveis;
     }
 }

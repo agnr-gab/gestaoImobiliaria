@@ -9,8 +9,6 @@ public class Moradores {
     private String profissao;
     private double rendaBruta;
 
-    private List<Imoveis> listaImoveis = new ArrayList<>();
-
     public Moradores(String nome, String cpf, String profissao, double rendaBruta) {
         this.nome = nome;
         this.cpf = cpf;
@@ -48,10 +46,6 @@ public class Moradores {
 
     public void setRendaBruta(double rendaBruta) {
         this.rendaBruta = rendaBruta;
-    }
-
-    public void adicionarImoveis(Imoveis imovel) {
-        listaImoveis.add(imovel);
     }
 
     @Override

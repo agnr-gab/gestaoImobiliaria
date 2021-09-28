@@ -1,10 +1,23 @@
 package br.com.zup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Imoveis {
     private String enderecoImovel;
     private String valorImovel;
     private String moradorAtual;
     private String funcionarioResponsavel;
+
+    private List<Moradores> listaMoradores = new ArrayList<>();
+
+    public void adicionarMoradores(Moradores morador) {
+        listaMoradores.add(morador);
+    }
+
+    public List<Moradores> getListaMoradores() {
+        return listaMoradores;
+    }
 
     public Imoveis(String enderecoImovel, String valorImovel, String moradorAtual, String funcionarioResponsavel) {
         this.enderecoImovel = enderecoImovel;
