@@ -23,7 +23,7 @@ public class Moradores extends Pessoa {
     public String toString() {
         StringBuilder retornoMorador = new StringBuilder();
         retornoMorador.append(super.toString());
-        retornoMorador.append("Telefone de Contato: " + telefone);
+        retornoMorador.append("\nTelefone de Contato: " + telefone);
         return retornoMorador.toString();
     }
 }
